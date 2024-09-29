@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piano</title>
+    <link rel="stylesheet" href="css/style1.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>myPiano</h1>
+        </div>
+
+        <div class="navstar">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="losign">
+          <div class="login" id="login">
+            <a href="login.html">Login</a>
+          </div>
+          <div class="signup" id="signup">
+            <a href="signup.html">SignUp</a>
+          </div>
+          <div class="userName" id="userName"></div>
+          <div class="logout" id="logout">
+            <a>Log out</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <span class="overTimer">
+      <h3 id="overAllTimeHead" class="timer1">
+        Over all active practice time:
+        <div id="overallTimer" class="timer1">00:00:00</div>
+      </h3>
+    </span>
+    <main>
+      <div class="keys" id="keyy">
+        <div class="white key" data-note="C2">q</div>
+        <div class="black key" data-note="Cb2">1</div>
+        <div class="white key" data-note="D2">w</div>
+        <div class="black key" data-note="Db2">2</div>
+        <div class="white key" data-note="E2">e</div>
+        <div class="white key" data-note="F2">r</div>
+        <div class="black key" data-note="Fb2">3</div>
+        <div class="white key" data-note="G2">t</div>
+        <div class="black key" data-note="Gb2">4</div>
+        <div class="white key" data-note="A2">y</div>
+        <div class="black key" data-note="Ab2">!</div>
+        <div class="white key" data-note="B2">a</div>
+
+        <div class="white key" data-note="C3">s</div>
+        <div class="black key" data-note="Cb2">@</div>
+        <div class="white key" data-note="D3">d</div>
+        <div class="black key" data-note="Db3">#</div>
+        <div class="white key" data-note="E3">f</div>
+        <div class="white key" data-note="F3">g</div>
+        <div class="black key" data-note="Fb3">$</div>
+        <div class="white key" data-note="G3">h</div>
+        <div class="black key" data-note="Gb3">%</div>
+        <div class="white key" data-note="A3">z</div>
+        <div class="black key" data-note="Ab3">^</div>
+        <div class="white key" data-note="B3">x</div>
+
+        <div class="white key" data-note="C4">c</div>
+        <div class="black key" data-note="Cb4">&</div>
+        <div class="white key" data-note="D4">v</div>
+        <div class="black key" data-note="Db4">*</div>
+        <div class="white key" data-note="E4">b</div>
+        <div class="white key" data-note="F4">n</div>
+        <div class="black key" data-note="Fb4">(</div>
+        <div class="white key" data-note="G4">m</div>
+        <div class="black key" data-note="Gb4">)</div>
+        <div class="white key" data-note="A4">j</div>
+        <div class="black key" data-note="Ab4">-</div>
+        <div class="white key" data-note="B4">k</div>
+
+        <div class="white key" data-note="C5">l</div>
+        <div class="black key" data-note="Cb5">=</div>
+        <div class="white key" data-note="D5">;</div>
+        <div class="black key" data-note="Db5">+</div>
+        <div class="white key" data-note="E5">,</div>
+        <div class="white key" data-note="F5">u</div>
+        <div class="black key" data-note="Fb5">_</div>
+        <div class="white key" data-note="G5">i</div>
+        <div class="black key" data-note="Gb5">:</div>
+        <div class="white key" data-note="A5">o</div>
+        <div class="black key" data-note="Ab5">"</div>
+        <div class="white key" data-note="B5">p</div>
+
+        <div class="white key" data-note="C6">.</div>
+        <div class="black key" data-note="Cb6">?</div>
+        <div class="white key" data-note="D6">/</div>
+        <div class="black key" data-note="Db6">]</div>
+        <div class="white key" data-note="E6">0</div>
+        <div class="white key" data-note="F6">9</div>
+        <div class="black key" data-note="Fb6">{</div>
+        <div class="white key" data-note="G6">8</div>
+        <div class="black key" data-note="Gb6">}</div>
+        <div class="white key" data-note="A6">7</div>
+        <div class="black key" data-note="Ab6">[</div>
+        <div class="white key" data-note="B6">6</div>
+
+        <div class="white key" data-note="C7">5</div>
+      </div>
+      <div class="audio">
+        <audio src="audio/Ab2.mp3" id="Ab2"></audio>
+        <audio src="audio/Ab3.mp3" id="Ab3"></audio>
+        <audio src="audio/Ab4.mp3" id="Ab4"></audio>
+        <audio src="audio/Ab5.mp3" id="Ab5"></audio>
+        <audio src="audio/Ab6.mp3" id="Ab6"></audio>
+        <audio src="audio/A2.mp3" id="A2"></audio>
+        <audio src="audio/A3.mp3" id="A3"></audio>
+        <audio src="audio/A4.mp3" id="A4"></audio>
+        <audio src="audio/A5.mp3" id="A5"></audio>
+        <audio src="audio/A6.mp3" id="A6"></audio>
+        <audio src="audio/B2.mp3" id="B2"></audio>
+        <audio src="audio/B3.mp3" id="B3"></audio>
+        <audio src="audio/B4.mp3" id="B4"></audio>
+        <audio src="audio/B5.mp3" id="B5"></audio>
+        <audio src="audio/B6.mp3" id="B6"></audio>
+        <audio src="audio/Cb2.mp3" id="Cb2"></audio>
+        <audio src="audio/Cb3.mp3" id="Cb3"></audio>
+        <audio src="audio/Cb4.mp3" id="Cb4"></audio>
+        <audio src="audio/Cb5.mp3" id="Cb5"></audio>
+        <audio src="audio/Cb6.mp3" id="Cb6"></audio>
+        <audio src="audio/C2.mp3" id="C2"></audio>
+        <audio src="audio/C3.mp3" id="C3"></audio>
+        <audio src="audio/C4.mp3" id="C4"></audio>
+        <audio src="audio/C5.mp3" id="C5"></audio>
+        <audio src="audio/C6.mp3" id="C6"></audio>
+        <audio src="audio/C7.mp3" id="C7"></audio>
+        <audio src="audio/Db2.mp3" id="Db2"></audio>
+        <audio src="audio/Db3.mp3" id="Db3"></audio>
+        <audio src="audio/Db4.mp3" id="Db4"></audio>
+        <audio src="audio/Db5.mp3" id="Db5"></audio>
+        <audio src="audio/Db6.mp3" id="Db6"></audio>
+        <audio src="audio/D2.mp3" id="D2"></audio>
+        <audio src="audio/D3.mp3" id="D3"></audio>
+        <audio src="audio/D4.mp3" id="D4"></audio>
+        <audio src="audio/D5.mp3" id="D5"></audio>
+        <audio src="audio/D6.mp3" id="D6"></audio>
+        <audio src="audio/E2.mp3" id="E2"></audio>
+        <audio src="audio/E3.mp3" id="E3"></audio>
+        <audio src="audio/E4.mp3" id="E4"></audio>
+        <audio src="audio/E5.mp3" id="E5"></audio>
+        <audio src="audio/E6.mp3" id="E6"></audio>
+        <audio src="audio/Fb2.mp3" id="Fb2"></audio>
+        <audio src="audio/Fb3.mp3" id="Fb3"></audio>
+        <audio src="audio/Fb4.mp3" id="Fb4"></audio>
+        <audio src="audio/Fb5.mp3" id="Fb5"></audio>
+        <audio src="audio/Fb6.mp3" id="Fb6"></audio>
+        <audio src="audio/F2.mp3" id="F2"></audio>
+        <audio src="audio/f3.mp3" id="F3"></audio>
+        <audio src="audio/f4.mp3" id="F4"></audio>
+        <audio src="audio/F5.mp3" id="F5"></audio>
+        <audio src="audio/F6.mp3" id="F6"></audio>
+        <audio src="audio/Gb2.mp3" id="Gb2"></audio>
+        <audio src="audio/Gb3.mp3" id="Gb3"></audio>
+        <audio src="audio/Gb4.mp3" id="Gb4"></audio>
+        <audio src="audio/Gb5.mp3" id="Gb5"></audio>
+        <audio src="audio/Gb6.mp3" id="Gb6"></audio>
+        <audio src="audio/G2.mp3" id="G2"></audio>
+        <audio src="audio/G3.mp3" id="G3"></audio>
+        <audio src="audio/G4.mp3" id="G4"></audio>
+        <audio src="audio/G5.mp3" id="G5"></audio>
+        <audio src="audio/G6.mp3" id="G6"></audio>
+      </div>
+      <div class="features">
+        <div class="time">
+          <div id="startTimer">Start Timer</div>
+          <div id="pauseTimer">Pause Timer</div>
+
+          <div id="stopTimer">Stop Timer</div>
+          <div id="timer">00:00:00</div>
+        </div>
+        <div class="record">
+          <button class="recordBtn" id="recordBtn">Record</button>
+          <button class="playBtn btn">Play</button>
+          <button class="saveBtn btn">Save</button>
+        </div>
+        <div class="recordings">
+          <h1 id="h1rec">My Recordings</h1>
+          <ul id="recordingsList"></ul>
+        </div>
+      </div>
+    </main>
+    <footer>copyrigth &copy; myPiano.com</footer>
+    <script src="js/index.js" type="module"></script>
+  </body>
+</html>

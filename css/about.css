@@ -1,0 +1,17 @@
+h1
+{
+    color: rgb(63, 32, 187);
+    text-align: center;
+}
+.contact{
+    background-color: #ccc;
+    padding-left: 120px;
+    font-size: 20px;
+    padding-left: 50px;
+    color: rgb(132, 6, 106);
+    text-align: centre;
+}
+.contact span{
+    color: black;
+    font-size: 25px;
+}
